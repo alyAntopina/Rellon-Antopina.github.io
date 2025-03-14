@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption & Discussion Board</title>
+    <link rel="stylesheet" href="decrypt.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="tabs">
+        <button onclick="openTab('encrypt-decrypt')">Encrypt & Decrypt</button>
+        <button onclick="openTab('videos')">Videos</button>
+        <button onclick="openTab('discussion')">Discussion Board</button>
+    </div>
+    
+    <div id="encrypt-decrypt" class="tab-content">
+        <h2>Caesar Cipher Encryption/Decryption</h2>
+        <div class="input-container">
+            <label for="text">Enter Text:</label>
+            <input type="text" id="text" placeholder="Enter text" required>
+            
+            <label for="shift">Shift Value:</label>
+            <input type="number" id="shift" placeholder="Enter shift number" required>
+
+            <div class="button-container">
+                <button onclick="handleEncryption()">Encrypt</button>
+                <button onclick="handleDecryption()">Decrypt</button>
+            </div>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+    <div id="videos" class="tab-content" style="display: none;">
+        <h2>Videos on Encryption and Decryption in Cybersecurity</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9u6sovgxiH4?si=3eNWN7uMW_vRggbW" title="Cybersecurity Encryption Basics" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div id="discussion" class="tab-content" style="display: none;">
+        <h2>Discussion Board</h2>
+        <ul>
+            <li><strong>Why is encryption important?</strong><br>
+                Encryption is important to every business today because it enables them to protect confidential data by converting it into ciphertext, a form that is unreadable without an encryption key. This process is called “encoding.” Encryption makes it nearly impossible for cybercriminals or other unauthorized parties to steal and misuse the data since only those with an encryption key can decipher the data and reveal the true information.<br>
+                <em>Source: <a href="https://www.titanfile.com/blog/what-is-data-encryption-and-why-is-it-important/" target="_blank">Titanfile</a></em>
+            </li>
+            <li><strong>Can encryption be misused?</strong><br>
+                Yes, encryption can be misused in various ways. For example, the CryptoLocker ransomware exploited encryption to lock users' files, demanding a ransom for their release. <br>
+                <em>Source: <a href="https://en.wikipedia.org/wiki/CryptoLocker" target="_blank">wikipedia</a></em>
+            </li>
+            <li><strong>Discussion on real-life ethical concerns about encryption.</strong><br>
+                tension between privacy rights and national security imperatives. On one hand, advocating for strong encryption is paramount to safeguarding individual privacy, ensuring freedom of speech, and fostering trust in digital technologies. <br>
+                <em>Source: <a href="http://cronolock.ca/the-lock-blog/the-ethics-of-encryption-balancing-privacy-rights-and-national-security#:~:text=The%20ethical%20dilemma%20surrounding%20encryption,fostering%20trust%20in%20digital%20technologies." target="_blank">cronolock</a></em>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

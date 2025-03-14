@@ -1,0 +1,99 @@
+body {
+    font-family: Poppins, sans-serif;
+    background: #718355;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.tabs button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background: #fff8e1;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tabs button:hover {
+    background: lightgray;
+}
+.tab-content {
+    background: #f3dcdc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-bottom: 20px;
+    display: none;
+}
+.tab-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.tab-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.tab-content ul li {
+    margin: 10px 0;
+}
+.tab-content ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+.tab-content ul li a:hover {
+    color: #555;
+}
+#encrypt-decrypt {
+    display: block;
+}
+#inputcontainer {
+    width: 40%;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+}
+#buttoncontainer {
+    display: flex;
+    gap: 10px;
+}
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: #fff8e1;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    flex-shrink: 1;
+    font-weight: bold;
+}
+button:hover {
+    background: lightgray;
+}
+#result {
+    font-weight: bold;
+    color: #101112;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+}
